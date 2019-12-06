@@ -1,0 +1,25 @@
+/* set new break-point */
+$grid-breakpoints: (
+  xxxs: 0,
+  xxs: 320px,
+  xs: 360px,
+  xsm: 414px,
+  xsl: 568px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+$container-max-widths: (
+  xxxs: 0,
+  xxs: 320px,
+  xs: 360px,
+  xsm: 414px,
+  xsl: 568px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);

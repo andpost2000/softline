@@ -1,0 +1,23 @@
+{
+  "name": "softline",
+  "description": "softline-brest site",
+  "main": "index.js",
+  "authors": [
+    "andpost2000@tut.by"
+  ],
+  "license": "ISC",
+  "homepage": "https://softline-brest.by",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/src/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "owl.carousel": "^2.3.4"
+  }
+}
