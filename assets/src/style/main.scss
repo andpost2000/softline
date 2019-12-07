@@ -45,8 +45,18 @@
 
 #navbarNav {
   position: sticky;
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
 }
 
+.text-small {
+  font-size: 14px;
+}
+.text-sparse {
+  letter-spacing: 2px;
+}
 html {
   font-size: 0.8rem;
 }
@@ -60,5 +70,15 @@ html {
 @include media-breakpoint-up(xsm) {
   html {
     font-size: 1rem;
+  }
+  #navbarNav {  
+    .nav-item {
+      padding-right: 20px;
+      padding-left: 20px;
+      border-left: 1px solid rgba(#000, 0.1);
+      &:first-child {
+        border: none;
+      }
+    }
   }
 }
