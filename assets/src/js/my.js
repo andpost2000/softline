@@ -1,5 +1,5 @@
 var url_string = window.location.href;
-function findActivePage (name) {
+function findActivePage(name) {
   if (name) {
     var id = '#' + name;
     $(id).addClass('active');
@@ -18,4 +18,19 @@ if (url_string.indexOf("products") !== -1) {
   findActivePage();
 }
 
-// console.log(url_string, findActivePage("products"));
+
+// scroll to top
+
+$(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+      $('#toTop').fadeIn();
+    } else {
+      $('#toTop').fadeOut();
+    }
+  });
+
+  $('#toTop').click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 800);
+  });
+});
