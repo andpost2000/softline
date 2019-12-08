@@ -12,6 +12,8 @@ if (url_string.indexOf("products") !== -1) {
   findActivePage("products");
 } else if (url_string.indexOf("projects") !== -1) {
   findActivePage("projects");
+} else if (url_string.indexOf("about-us") !== -1) {
+  findActivePage("about-us");
 } else {
   findActivePage();
 }

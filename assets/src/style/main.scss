@@ -48,6 +48,23 @@
 
   .nav-link {
     font-size: 1.2rem;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #007bff;
+      opacity: .3;
+      transition: 0.3s ease-in;
+    }
+  }
+
+  .nav-item.active .nav-link:before {
+    width: 100%;
+    opacity: 1;
   }
 }
 
@@ -67,7 +84,7 @@ html {
   }
 }
 
-@include media-breakpoint-up(xsm) {
+@include media-breakpoint-up(sm) {
   html {
     font-size: 1rem;
   }
