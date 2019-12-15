@@ -101,6 +101,10 @@ html {
   font-size: 0.8rem;
 }
 
+body {
+  overflow: overlay;
+}
+
 @include media-breakpoint-up(xs) {
   html {
     font-size: 0.9rem;
